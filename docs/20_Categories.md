@@ -36,6 +36,12 @@ class Categories implements CategoriesInterface {
 }
 ```
 
+Registration of the service in `AppBundle/Resources/config/services.yml`
+```html
+ # LuceneSearch categories as services
+ AppBundle\LuceneSearch\Services\Categories: ~
+```
+
 To inform the lucene search crawler about those categories we need to add another meta element. 
 As you can see it's also possible to add multiple categories per document.
 
